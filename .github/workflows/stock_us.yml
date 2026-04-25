@@ -9,6 +9,7 @@ on:
 jobs:
   summarize-us:
     runs-on: ubuntu-latest
+    environment: actions
     steps:
       - name: 📥 코드 체크아웃
         uses: actions/checkout@v4
