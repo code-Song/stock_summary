@@ -5,7 +5,8 @@ on:
     # 한국 시간(KST) 오전 07시 00분 = 미국 평일장 마감 후 (화~토 실행)
     - cron: '0 22 * * 1-5'
   workflow_dispatch:
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 jobs:
   summarize-us:
     runs-on: ubuntu-latest
