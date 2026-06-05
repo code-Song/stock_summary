@@ -3,7 +3,7 @@ name: 📈 KR Stock Daily Summary
 on:
   schedule:
     # 한국 시간(KST) 15시 30분 (월~금만 실행)
-    - cron: '30 6 * * 1-5'
+    # - cron: '30 6 * * 1-5'
   workflow_dispatch:
 
 jobs:
